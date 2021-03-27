@@ -1,0 +1,338 @@
+/*-----FONTS-----*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --primary: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
+  --secondary: radial-gradient(circle at 50% -20.71%, #d6d4f1 0, #dad3ef 6.25%, #dfd2ed 12.5%, #e3d0ea 18.75%, #e7cfe8 25%, #eacfe4 31.25%, #edcee1 37.5%, #f0cdde 43.75%, #f2cdda 50%, #f4cdd6 56.25%, #f5cdd3 62.5%, #f5cdcf 68.75%, #f5cdcb 75%, #f5cec8 81.25%, #f4cec5 87.5%, #f3cfc2 93.75%, #f1d0c0 100%);
+  --btn:b radial-gradient(circle at 106.68% 59.99%, #e2fe9d 0, #e6f48e 8.33%, #e9ea7e 16.67%, #ecdf6e 25%, #efd25d 33.33%, #f1c44d 41.67%, #f2b53c 50%, #f3a52d 58.33%, #f59522 66.67%, #f7851d 75%, #fa751e 83.33%, #fc6323 91.67%, #ff512b 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  font-size: 1em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1em;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: .8em;
+  font-weight: 700;
+}
+
+p {
+  font-size: .7em;
+  font-weight: 400;
+}
+
+/*-----Body Start-----*/
+
+.container {
+  width: 95%;
+  height: 55vh;
+  border-radius: 18px;
+  display: flex;
+  overflow: hidden;
+  margin: 20px;
+}
+
+.profile {
+  width: 20%;
+  height: 100%;
+  background: var(--secondary);
+  position: relative;
+  border-radius: 18px;
+}
+
+.dashboard {
+  width: 80%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 18px;
+  z-index: 1;
+  position: absolute;
+  left: 20%;
+}
+
+/* LOGO */
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin: 12px;
+  cursor: pointer;
+}
+
+.logo img {
+  width: 40px;
+}
+.logo h1{
+  font-size: 1.3rem;
+}
+/* MAIN PROFILE */
+.user-img {
+  width: 80px;
+  display: block;
+  margin: auto;
+  margin-top: 3rem;
+  border: 2px solid black;
+  border: 3px solid rgba(255, 113, 76, 1);
+
+  border-radius: 50%;
+
+}
+.name{
+  text-align: center;
+}
+.verified{
+  color: #218ac2;
+  /*position: absolute;
+  left: 80%;
+  font-size: 10px;
+  padding-top: 5px;*/
+}
+.user-name{
+  text-align: center;
+  color: rgba(0,0,0,.9);
+
+}
+
+/*-----SOCIAL----*/
+.social{
+  display: flex;
+  padding: 10px;
+  margin: 1rem 0;
+}
+.gap{
+  padding: 5px;
+}
+
+.social .line{
+  width: 1px;
+  height: 30px;
+  background-color: black;
+  opacity: 0.5;
+  margin-top: 10px;
+}
+/*-----LINKS-----*/
+.links{
+  padding: 2rem 0rem;
+
+}
+.links h2{
+  padding: 0rem 1rem;
+}
+.link{
+  display: flex;
+  align-items: center;
+  margin: 0rem 1.5rem;
+  padding: 1rem 0rem;
+}
+
+.link .logout{
+  padding: 0rem 1rem;
+}
+
+
+/*---HORIZONTAL LINE----*/
+.h-line{
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  opacity: 0.3;
+  margin: 2rem 0;
+}
+
+
+/*-----DASHBOARD SECTION-----*/
+
+.top-bar{
+  flex: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+}
+
+#input{
+  height: 2rem;
+  width: 14rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #f5f5f5;
+  position: relative;
+  padding-left: 30px;
+}
+#input:focus{
+  outline: none;
+}
+.input-icon{
+  position: absolute;
+  background-color: #eeeee4;
+  padding: .5rem .4rem;
+  border-radius: 8px;
+  z-index: 1;
+
+}
+.top-bar-icons ul i{
+  padding: 7px;
+  cursor: pointer;
+}
+.top-bar-icons ul a{
+  text-decoration: none;
+  background-color: #f7b42c;
+  background-image: linear-gradient(315deg, #f7b42c 0%, #fc575e 74%);
+  border-radius: 8px;
+  color: #fff;
+  padding: 6px 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+/*----TOP BAR END----*/
+
+/*---Stories Section---*/
+.stories-text{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem;
+}
+
+.stories-text h1{
+  font-size: 2em;
+}
+
+
+.stories-img{
+  display: flex;
+  padding: 0 1rem;
+  /*border: 2px solid black;*/
+}
+
+.active-stories{
+  width: 80px;
+  border-radius: 60%;
+  margin: 0rem .5rem;
+  display: block;
+  border: 4px solid rgba(255, 113, 76, 1);
+}
+.story-img1 {
+  border: 3px dotted rgba(255, 113, 76, 1);
+}
+.fa-plus{
+  position: absolute;
+  top: 10.5%;
+  left: 7%;
+  font-size: 1.5rem;
+  color: #fff;
+  opacity: .8;
+}
+
+/*---FEED----*/
+.feed{
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 1rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+.feed h1{
+  flex: 1;
+  font-size: 1.5em;
+}
+.feed h2{
+  padding: 0 .5rem;
+}
+
+/*-------POSTS START HERE------*/
+.posts{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  margin: 1rem;
+  padding: 1rem;
+  /*border: 2px solid red;*/
+}
+.post-img{
+  width: 220px;
+  border: none;
+  border-radius: 16px;
+
+}
+.post-detail{
+    padding: 1rem 0;
+
+}
+.post-detail p{
+  display: inline-block;
+  padding: 0 .3rem;
+  font-size: .9rem;
+}
+.post-detail h2{
+  display: inline;
+  text-align: center;
+  padding-left: .5rem;
+}
+
+.post-detail i{
+  font-size: .9rem;
+  padding: 0 .3rem;
+}
+
+.post-detail:nth-child(5){
+  position: relative;
+  transform: translate(0,-50%);
+}
+.liked{
+  color: red;
+}
+  /*-----DASHBOARD CLOSE ICON-----*/
+.close img{
+  background-color: #fff;
+  height: 40px;
+  position: absolute;
+  top: 38%;
+  left: -4%;
+  border: 8px solid #fff;
+  border-radius: 50% 0 0 50%;
+  
+}
+
+.close img::before{
+  content: "";
+  background-color: red;
+}
+
+
+@media Screen and (max-width:775px) {
+  :root{
+    
+  }
+  .profile{
+    display: none;
+  }
+  .posts{
+    display: flex;
+    flex-direction: column;
+  }
+  .container{
+    width: 95%;
+  }
+  .stories-img{
+    display: none;
+  }
+}
